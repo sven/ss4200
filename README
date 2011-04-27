@@ -1,0 +1,24 @@
+Intel SS4200 Tools
+------------------
+
+Currently, the job of the tools is to set the HDD LEDs depending on the drives
+status (standby, running, defect).
+
+If a drive has a defect, the flashing amber LED has priority over the normal
+status.
+
+
+> drive_watch
+-------------
+
+Monitor if a drive is running or sleeping and set the LED to green or off.
+
+
+> smart_leds
+------------
+
+Monitor S.M.A.R.T. status 197 and 198 and set LEDs to flashing amber on error.
+
+197 - Current_Pending_Sector
+198 - Offline_Uncorrectable
+
